@@ -10,9 +10,11 @@ public class SnakeAndLadder
 		System.out.println("Welcome to Snake and Ladder");
 		System.out.println("The Player Starts at Position 0");
 		int numberOnDie=0,currentPosition=0;
+		int count=0;
 		while(currentPosition<100)
 		{
 			numberOnDie=(int)((Math.random()*100)%6)+1;
+			count=count+1;
 			System.out.println("The Number on the Die is "+numberOnDie);
 			int option=(int)(Math.random()*100)%3;
 			switch(option)
@@ -40,7 +42,7 @@ public class SnakeAndLadder
 			System.out.println("Current Position "+currentPosition);
 		}
 		System.out.println("The Player has reached Winning position");
-		
+		System.out.println("The number of times the die was played : "+count);
 		
 
 		}
