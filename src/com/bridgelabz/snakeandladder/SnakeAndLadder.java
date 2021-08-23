@@ -34,6 +34,9 @@ public class SnakeAndLadder
 			{
 				currentPosition=0;
 			}	
+			if(currentPosition>100) {
+				currentPosition=currentPosition-numberOnDie;
+			}
 			System.out.println("Current Position "+currentPosition);
 		}
 		System.out.println("The Player has reached Winning position");
